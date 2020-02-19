@@ -3,7 +3,7 @@
 int main() {
 	double a, b, c, x1, x2, d;
 	printf("Введите коэффиценты: a, b, c  ");
-    (void)scanf("%lf %lf %lf", &a, &b, &c);
+    scanf("%lf %lf %lf", &a, &b, &c);
     d = b * b - 4 * a * c;
 	if (d < 0) {
 		printf("Вещестенных корней нет! ");
