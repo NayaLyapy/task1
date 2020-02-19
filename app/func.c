@@ -22,5 +22,5 @@ int main() {
 		x1 = (-b + sqrt(d)) / (2 * a);
 		x2 = (-b - sqrt(d)) / (2 * a);
 	}
-    printf("%lf %lf %lf ", x1, x2);
+    printf("%lf %lf", x1, x2);
 }
