@@ -5,7 +5,7 @@ CONFIG -= qt
 
 SOURCES += main.c \
     myfunc.c \
-    func.c
+    square.c
 
 HEADERS += \
     myfunc.h \
