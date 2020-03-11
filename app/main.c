@@ -6,6 +6,6 @@ int main()
 {
     printf("Hello World!\n");
     return myfunc(2);
-    struct pair p = square(1,2,3);
-    printf("%lf",p.x);
+    struct pair par = square(4,4,1);
+    printf("%lf",par.x);
 }

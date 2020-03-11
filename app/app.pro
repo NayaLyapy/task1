@@ -9,7 +9,7 @@ SOURCES += main.c \
 
 HEADERS += \
     myfunc.h \
-    func.h
+    square.h
 
 QMAKE_CFLAGS += -Wall -Wextra -Werror
 
