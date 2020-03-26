@@ -2,7 +2,7 @@
 int myfunc(int b) {
     return b+4;
 }
-
+//фибоначчи
 
 
 int fibonachi(int num) {
