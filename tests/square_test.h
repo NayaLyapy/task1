@@ -11,7 +11,7 @@ TEST(squareTest, suite1) {
 
     double a[2];
 
-    ASSERT_EQ(square(1,2,3,a), 2);
+    ASSERT_EQ(square(1,4,9,a), 2);
 
 }
 
