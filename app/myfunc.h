@@ -2,14 +2,7 @@
 #define MYFUNC_H
 
 int myfunc(int b);
-
 int fibonachi(int num);
-
-struct pair square (double a, double b, double c);
-
-struct pair {
-    double x;
-    double y;
-};
+int square(double a, double b, double c, double* m);
 
 #endif // MYFUNC_H

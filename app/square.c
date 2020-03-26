@@ -1,17 +1,45 @@
-#include "myfunc.h"
+#include <stdio.h>
 #include <math.h>
 
-struct pair square(double a, double b, double c){
-	 double d = b*b - 4*a*c;
+int square(double a, double b, double c, double* k)
+{
 
+    if (a == 0)
 
+    return 3;
 
-     double x1 = (-b+sqrt(d))/(2*a);
-	 double x2 = (-b-sqrt(d))/(2*a);
+    double d;
 
-     struct pair par;
-	 par.x=x1;
-	 par.y=x2;
-     return par;
+    d=b*b-4*a*c;
+
+    if(d>0){
+
+        k[0] = (-b+sqrt(d))/(2*a);
+
+        k[1] = (-b-sqrt(d))/(2*a);
+
     }
 
+    else {
+
+    if(d==0){
+
+            k[0] = (-b)/(2*a);
+
+
+
+        return 1;
+
+        }
+
+    else
+
+        return 2;
+
+    }
+
+
+
+return 0;
+
+}
