@@ -1,34 +1,48 @@
+#ifndef SQUARE_H
+#define SQUARE_H
 #include <gtest/gtest.h>
-#include <gmock/gmock-matchers.h>
 
-/* using namespace testing; */
 extern "C" {
-#include "myfunc.h"
+#include <stdio.h>
+#include <math.h>
 }
 
-TEST(test1, suite1)
-{
-   struct pair par;
-   par.x = 0;
-   par.y = 4;
+TEST(squareTest, suite1) {
 
-  struct pair pair = square(1, 0, -4);
-  ASSERT_NEAR(pair.x, pair.x, 0.001);
-  ASSERT_NEAR(pair.y, pair.y, 0.001);
-}
+    double a[2];
 
-TEST(test2, suite2)
-{
-    struct pair par;
-    par.x = 2;
-    par.y = 2;
-
-struct pair pair = square(1,-4,4);
-ASSERT_NEAR(pair.x, pair.x, 0.001);
-ASSERT_NEAR(pair.y, pair.y, 0.001);
+    ASSERT_EQ(square(1,2,3,a), 2);
 
 }
-TEST(test3, suite3)
-{
+
+
+TEST(squareTest, suite2) {
+
+    double a[2];
+    square(1,5,6,a);
+    ASSERT_EQ(a[0], -2);
+    ASSERT_EQ(a[1], -3);
+}
+
+
+
+TEST(squareTest, suite3) {
+
+    double a[2];
+    square(1,4,4,a);
+    ASSERT_EQ(a[0], -2);
+}
+
+
+
+
+TEST(squareTest, suite4) {
+
+    double a[2];
+    ASSERT_EQ(square(0,0,0,a), 3);
 
 }
+
+
+
+#endif // SQUARE_H
