@@ -4,10 +4,13 @@
 int square(double a, double b, double c, double* k)
 {
 
-    if (a == 0){
-        k[0] = (c/b);
-return 3;
-    }
+   if (a == 0 && b!=0){
+        k[0]=(c/b)
+    return 3;
+}
+    if (a == 0 && b==0){
+    return 4;
+}
 
     double d;
 
