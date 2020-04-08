@@ -39,7 +39,7 @@ TEST(squareTest, suite3) {
 TEST(squareTest, suite4) {
 
     double a[2];
-    ASSERT_EQ(square(0,0,0,a), 4);
+    ASSERT_EQ(square(0,0,0,a), 0);
 
 }
 
