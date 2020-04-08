@@ -36,8 +36,6 @@ TEST(squareTest, suite3) {
 }
 
 
-
-
 TEST(squareTest, suite4) {
 
     double a[2];
@@ -53,7 +51,5 @@ TEST(squareTest, suite5) {
     ASSERT_EQ(a[0], -1);
 
 }
-
-
 
 #endif // SQUARE_H
