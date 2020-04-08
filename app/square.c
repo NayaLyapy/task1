@@ -20,6 +20,8 @@ int square(double a, double b, double c, double* k)
 
         k[0] = (-b+sqrt(d))/(2*a);
         k[1] = (-b-sqrt(d))/(2*a);
+       
+       return 2;
 
     }
 
@@ -28,9 +30,7 @@ int square(double a, double b, double c, double* k)
         k[0] = (-b)/(2*a);
     return 1;
      }
-       else
-
-        return 2;
+   
 
     }
 
