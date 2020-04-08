@@ -20,6 +20,7 @@ TEST(squareTest, suite2) {
 
     double a[2];
     square(2,4,-48,a);
+    ASSERT_EQ(square(2,4,-48,a), 2);
     ASSERT_EQ(a[0], 4);
     ASSERT_EQ(a[1], -6);
 }
@@ -30,6 +31,7 @@ TEST(squareTest, suite3) {
 
     double a[2];
     square(1,4,4,a);
+    ASSERT_EQ(square(1,4,4,a), 1);
     ASSERT_EQ(a[0], -2);
 }
 
@@ -47,6 +49,7 @@ TEST(squareTest, suite5) {
 
     double a[2];
     square(0,4,4,a);
+    ASSERT_EQ(square(0,4,4,a), 1);
     ASSERT_EQ(a[0], -1);
 
 }
